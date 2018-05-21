@@ -1,0 +1,65 @@
+﻿<html>
+<head>
+    <title>IGBooks Publishers Pvt Ltd</title>
+    <script>
+        function Submit() {
+            var name = document.getElementById("txtName").value;
+            var book = document.getElementById("txtBook").value;
+            var email = document.getElementById("txtEmail").value;
+            var feedback = document.getElementById("txtFeedBack").value;
+
+            if (name == "") {
+                alert("Please Enter name");
+                return;
+            }
+            if (book == "") {
+                alert("Please Enter Last Book Purchased");
+                return;
+            }
+            if (email == "") {
+                alert("Please Enter Email");
+                return;
+            }
+            if (feedback == "") {
+                alert("Please Enter FeedBack");
+                return;
+            }
+            
+
+        }
+
+    </script>
+</head>
+<body bgcolor="#ddd">
+    <h2>FEEDBACK</h2>
+    <table align="center">
+        <tr>
+            <td> Name </td>
+            <td>
+                <input type="text" id="txtName" />
+            </td>
+        </tr>
+        <tr>
+            <td> Last Book Purchased </td>
+            <td>
+                <input type="text" id="txtBook" />
+            </td>
+        </tr>
+        <tr>
+            <td> Contact Email </td>
+            <td>
+                <input type="text" id="txtEmail" />
+            </td>
+        </tr>
+        <tr>
+            <td> Feedback </td>
+            <td>
+                <textarea rows="4" id="txtFeedBack"></textarea>
+            </td>
+        </tr>
+        <tr>
+            <td colspan="2"><input type="button" value="Submit" onclick="Submit()" /></td>
+        </tr>
+    </table>
+</body>
+</html>

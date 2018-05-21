@@ -1,0 +1,44 @@
+﻿<html>
+<head>
+    <title>IGBooks Publishers Pvt Ltd</title>
+</head>
+<body bgcolor="#ddd">
+    
+    <script>
+
+        function Submit() {
+            var name = document.getElementById("txtUserName").value;
+            var pwd = document.getElementById("txtPassword").value;
+            if (name == "BCAMCA" && pwd == "TestPwd") {
+                alert("Password verified");
+            }
+            else {
+                alert("Incorrect Username and Password");
+            }
+        }
+
+    </script>
+    <h1> Enter your username and password</h1>
+    <form action="" method="post" align="center">
+
+        <table>
+            <tr>
+                <td>User Name :</td>
+                <td><input type="text" id="txtUserName" /></td>
+            </tr>
+            <tr>
+                <td>Password :</td>
+                <td><input type="password" id="txtPassword" /></td>
+            </tr>
+            <tr>
+                <td colspan="2"><input type="button" value="Submit" onclick="Submit()" /></td>
+
+            </tr>
+        </table>
+
+
+
+
+    </form>
+</body>
+</html>
